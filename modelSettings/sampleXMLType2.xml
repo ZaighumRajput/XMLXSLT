@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!-- File Name: sampleXML.xml -->
+<ModelInventory>
+    <Interest>
+        <RiskFactor type="Interest">
+	        <Name>EUR-SWAP</Name>
+          <Model ModelName="G2">
+            <G2>
+              <a upperBound="1" lowerBound="2">0.1</a>
+              <b upperBound="1" lowerBound="2">0.1</b>
+              <sigma upperBound="1" lowerBound="2">0.1</sigma>
+              <eta upperBound="1" lowerBound="2">0.1</eta>
+              <rho upperBound="1" lowerBound="2">0.1</rho>
+            </G2>
+          </Model>
+        </RiskFactor>
+        <RiskFactor>
+          <Name>RON-GOVT</Name>
+          <Type>Equity</Type>
+          <Model ModelName="HullWhite">
+            <HullWhite>
+              <a upperBound="1" lowerBound="2">0.1</a>
+              <sigma upperBound="1" lowerBound="2">0.1</sigma>
+            </HullWhite>
+          </Model>
+        </RiskFactor>     
+    </Interest>
+  <Equity>
+	<RiskFactor>
+		<Name>EUR-SWAP</Name>
+    <Model ModelName="MJD">
+      <MJD>
+         <JumpIntensity upperBound="1" lowerBound="2">0.1</JumpIntensity>
+         <JumpMean upperBound="1" lowerBound="2"> 0.2</JumpMean>
+         <JumpVol upperBound="1" lowerBound="2"> 0.2</JumpVol>
+        <Vol upperBound="1" lowerBound="2"> 0.4</Vol>
+      </MJD>
+    </Model>
+	</RiskFactor>
+    
+  </Equity>
+</ModelInventory>

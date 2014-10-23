@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- File Name: sampleXML.xml -->
+<ModelInventory>
+  
+
+    <Interest>
+     <RiskFactor>
+		<Name>AEX</Name>
+		<Type>Equity</Type>
+    <Model ModelName="G2">
+      <G2>
+        <a upperBound="1" lowerBound="2">0.1</a>
+      </G2>
+    </Model>
+	</RiskFactor>
+  </Interest>
+  <Equity>
+	<RiskFactor>
+		<Name>EUR-SWAP</Name>
+		<Type>Interest</Type>
+    <Model ModelName="MJD">
+      <MJD>
+         <a upperBound="1" lowerBound="2">0.1</a>
+      </MJD>
+    </Model>
+	</RiskFactor>
+  </Equity>
+</ModelInventory>

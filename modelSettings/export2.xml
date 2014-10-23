@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ModelInventory>
+	<Interest>
+		<RiskFactor>
+			<Name>AEX</Name>
+			<Type>Interest</Type>
+			<Model ModelName="MJD">
+				<G2>
+					<a upperBound="2" lowerBound="2">1</a>
+				</G2>
+			</Model>
+		</RiskFactor>
+	</Interest>
+	<Equity>
+		<RiskFactor>
+			<Name>afa</Name>
+			<Type>afa</Type>
+			<Model ModelName="Eq">
+				<MJD>
+					<a upperBound="1" lowerBound="1">1</a>
+				</MJD>
+			</Model>
+		</RiskFactor>
+	</Equity>
+</ModelInventory>

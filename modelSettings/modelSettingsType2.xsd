@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Models">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="RiskFactor">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Interest">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="HullWhite">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="a">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="upperBound" type="xs:unsignedByte" use="required" />
+                                  <xs:attribute name="lowerBound" type="xs:unsignedByte" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="sigma">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="upperBound" type="xs:unsignedByte" use="required" />
+                                  <xs:attribute name="lowerBound" type="xs:unsignedByte" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="G2">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="a">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="upperBound" type="xs:unsignedByte" use="required" />
+                                  <xs:attribute name="lowerBound" type="xs:unsignedByte" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="sigma">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="upperBound" type="xs:unsignedByte" use="required" />
+                                  <xs:attribute name="lowerBound" type="xs:unsignedByte" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="b">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="upperBound" type="xs:unsignedByte" use="required" />
+                                  <xs:attribute name="lowerBound" type="xs:unsignedByte" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="eta">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="uppperBound" type="xs:unsignedByte" use="required" />
+                                  <xs:attribute name="lowerBound" type="xs:unsignedByte" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="rho">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="uppperBound" type="xs:unsignedByte" use="required" />
+                                  <xs:attribute name="lowerBound" type="xs:unsignedByte" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="Equity">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="MJD">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="JumpIntensity">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="upperBound" type="xs:unsignedByte" use="required" />
+                                  <xs:attribute name="lowerBound" type="xs:unsignedByte" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="JumpMean">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="upperBound" type="xs:unsignedByte" use="required" />
+                                  <xs:attribute name="lowerBound" type="xs:unsignedByte" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="JumpVol">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="upperBound" type="xs:unsignedByte" use="required" />
+                                  <xs:attribute name="lowerBound" type="xs:unsignedByte" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="vol">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:decimal">
+                                  <xs:attribute name="uppperBound" type="xs:unsignedByte" use="required" />
+                                  <xs:attribute name="lowerBound" type="xs:unsignedByte" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="BlackScholes">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="LLP" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="irProcessType" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required" />
+            <xs:attribute name="currency" type="xs:string" use="optional" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FX">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RiskFactor">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Garmen">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="LLP" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="name" type="xs:string" use="required" />
+                  <xs:attribute name="domesticCurve" type="xs:string" use="required" />
+                  <xs:attribute name="foreignCurve" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Credit">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RiskFactor">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="name" type="xs:string" use="required" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

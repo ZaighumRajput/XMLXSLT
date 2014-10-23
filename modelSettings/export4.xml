@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ModelInventory>
+	<Equity>
+		<RiskFactor>
+			<Name>Abc</Name>
+			<Model ModelName="Hul">
+				<BlackScholes>
+					<LLP>a</LLP>
+					<irProcessType>a</irProcessType>
+				</BlackScholes>
+				<MJD>
+					<JumpIntensity upperBound="a" lowerBound="a">a</JumpIntensity>
+					<JumpMean upperBound="" lowerBound=""/>
+					<JumpVol upperBound="" lowerBound=""/>
+					<Vol upperBound="" lowerBound=""/>
+				</MJD>
+			</Model>
+		</RiskFactor>
+	</Equity>
+</ModelInventory>

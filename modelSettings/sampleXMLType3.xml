@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!-- File Name: sampleXML.xml -->
+<ModelInventory>
+  
+    <Interest>
+        <RiskFactor>
+	        <Name>EUR-SWAP</Name>
+          <Model ModelName="G2">
+            <G2>
+              <a upperBound="1" lowerBound="2">0.1</a>
+              <b upperBound="1" lowerBound="2">0.1</b>
+              <sigma upperBound="1" lowerBound="2">0.1</sigma>
+              <eta upperBound="1" lowerBound="2">0.1</eta>
+              <rho upperBound="1" lowerBound="2">0.1</rho>
+            </G2>
+          </Model>
+        </RiskFactor>
+      
+        <RiskFactor>
+          <Name>RON-GOVT</Name>
+          <Model ModelName="HullWhite">
+            <HullWhite>
+              <a upperBound="1" lowerBound="2">0.1</a>
+              <sigma upperBound="1" lowerBound="2">0.1</sigma>
+            </HullWhite>
+          </Model>
+        </RiskFactor>    
+      
+    </Interest>
+  
+  <Equity>
+    
+	<RiskFactor>
+		<Name>AEX</Name>
+    <Model ModelName="MJD">
+      <MJD>
+         <JumpIntensity upperBound="1" lowerBound="2">0.1</JumpIntensity>
+         <JumpMean upperBound="1" lowerBound="2"> 0.2</JumpMean>
+         <JumpVol upperBound="1" lowerBound="2"> 0.2</JumpVol>
+        <Vol upperBound="1" lowerBound="2"> 0.4</Vol>
+      </MJD>
+    </Model>
+	</RiskFactor>
+    
+  <RiskFactor>
+    <Name>FTSE</Name>
+    <Model ModelName="BlackScholes">
+      <BlackScholes>
+        <LLP>5</LLP>
+        <irProcessType>G2</irProcessType>
+      </BlackScholes>
+    </Model>
+  </RiskFactor>
+
+  </Equity>
+</ModelInventory>

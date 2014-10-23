@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ModelInventory>
+	<Interest>
+		<RiskFactor Type="Equity">
+			<Name/>
+			<Model ModelName="">
+				<HullWhite>
+					<a upperBound="" lowerBound=""/>
+					<sigma upperBound="" lowerBound=""/>
+				</HullWhite>
+				<G2>
+					<a upperBound="" lowerBound=""/>
+					<b upperBound="" lowerBound=""/>
+					<sigma upperBound="" lowerBound=""/>
+					<eta upperBound="" lowerBound=""/>
+					<rho upperBound="" lowerBound=""/>
+				</G2>
+			</Model>
+		</RiskFactor>
+	</Interest>
+</ModelInventory>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Models>
+    <RiskFactor name="AEX">
+      <Equity>
+      <BlackScholes irProcessType ="G2">
+        <LLP>25Y</LLP>
+      </BlackScholes>
+    </Equity>
+     </RiskFactor>
+  
+    <RiskFactor name="FTSE">
+      <Equity>
+      <MJD>
+        <JumpIntensity upperBound="1" lowerBound="0">0.1</JumpIntensity >
+        <JumpMean upperBound="1" lowerBound="0">0.5</JumpMean >
+        <JumpVol upperBound="1" lowerBound="0">0.1</JumpVol>
+        <vol uppperBound="1" lowerBound="0">0.04</vol>
+      </MJD>
+        <Equity>
+    </RiskFactor>
+  
+
+
+  <RiskFactor name="EUR-SWAP" currency="EUR">
+    <Interest>
+    <G2>
+      <a upperBound="1" lowerBound="0">0.1</a>
+      <sigma upperBound="1" lowerBound="0">0.5</sigma >
+      <b upperBound="1" lowerBound="0">0.1</b>
+      <eta uppperBound="1" lowerBound="0">0.04</eta>
+      <rho uppperBound="1" lowerBound="0">0.04</rho>
+   </G2>
+      <\Interest>
+  </RiskFactor>
+  <RiskFactor name="RON-GOVT" currency="HUF">
+    <HullWhite>
+      <a upperBound="1" lowerBound="0">0.1</a>
+      <sigma upperBound="1" lowerBound="0">0.5</sigma >
+    </HullWhite>
+  </RiskFactor>
+</Interest>
+
+  <FX>
+    <RiskFactor name="EUR/AUD" domesticCurve="EUR-SWAP" foreignCurve="">
+      <LLP>0</LLP>
+    </RiskFactor>
+    
+  </FX>
+
+  <Credit>
+    <RiskFactor name="AAA">
+      
+    </RiskFactor>
+  </Credit>
+</Models>

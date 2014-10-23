@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ModelInventory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RiskFactor>
+		<Name>AEX</Name>
+		<Type>Equity</Type>
+		<Model name="G2">
+			<G2>
+				<a upperBound="1" lowerBound="2">0.1</a>
+			</G2>
+			<MJD>
+				<a>2</a>
+			</MJD>
+		</Model>
+	</RiskFactor>
+	<RiskFactor>
+		<Name>EUR-SWAP</Name>
+		<Type>Interest</Type>
+		<Model name="MJD">
+			<G2/>
+			<MJD>
+				<a upperBound="1" lowerBound="2">0.1</a>
+			</MJD>
+		</Model>
+	</RiskFactor>
+</ModelInventory>
