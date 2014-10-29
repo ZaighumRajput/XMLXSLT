@@ -1,0 +1,12 @@
+c:\users\lsadi07uj\documents\visual studio 2012\Projects\csvtoXMLUsingLinq\csvtoXMLUsingLinq\bin\Debug\csvtoXMLUsingLinq.exe.config
+c:\users\lsadi07uj\documents\visual studio 2012\Projects\csvtoXMLUsingLinq\csvtoXMLUsingLinq\bin\Debug\csvtoXMLUsingLinq.exe
+c:\users\lsadi07uj\documents\visual studio 2012\Projects\csvtoXMLUsingLinq\csvtoXMLUsingLinq\bin\Debug\csvtoXMLUsingLinq.pdb
+c:\users\lsadi07uj\documents\visual studio 2012\Projects\csvtoXMLUsingLinq\csvtoXMLUsingLinq\obj\Debug\csvtoXMLUsingLinq.csprojResolveAssemblyReference.cache
+c:\users\lsadi07uj\documents\visual studio 2012\Projects\csvtoXMLUsingLinq\csvtoXMLUsingLinq\obj\Debug\csvtoXMLUsingLinq.exe
+c:\users\lsadi07uj\documents\visual studio 2012\Projects\csvtoXMLUsingLinq\csvtoXMLUsingLinq\obj\Debug\csvtoXMLUsingLinq.pdb
+E:\Zaighum\xmlPractice\XMLXSLT\linqExample\csvtoXMLUsingLinq\bin\Debug\csvtoXMLUsingLinq.exe.config
+E:\Zaighum\xmlPractice\XMLXSLT\linqExample\csvtoXMLUsingLinq\obj\Debug\csvtoXMLUsingLinq.exe
+E:\Zaighum\xmlPractice\XMLXSLT\linqExample\csvtoXMLUsingLinq\obj\Debug\csvtoXMLUsingLinq.pdb
+E:\Zaighum\xmlPractice\XMLXSLT\linqExample\csvtoXMLUsingLinq\bin\Debug\csvtoXMLUsingLinq.exe
+E:\Zaighum\xmlPractice\XMLXSLT\linqExample\csvtoXMLUsingLinq\bin\Debug\csvtoXMLUsingLinq.pdb
+E:\Zaighum\xmlPractice\XMLXSLT\linqExample\csvtoXMLUsingLinq\obj\Debug\csvtoXMLUsingLinq.csprojResolveAssemblyReference.cache
