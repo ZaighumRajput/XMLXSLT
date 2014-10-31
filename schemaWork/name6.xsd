@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:target="http://www.example.com/name"
+        targetNamespace="http://www.example.com/name"
+        elementFormDefault="qualified">
+  <complexType name="NameType">
+    <sequence>
+      <element name="first" type="string"/>
+      <element name="middle" type="string"/>
+      <element name="last" type="string"/>
+    </sequence>
+    <attribute name="title" type="string"/>
+  </complexType>
+  <element name="name" type="target:NameType"/>
+  
+  
+</schema>
